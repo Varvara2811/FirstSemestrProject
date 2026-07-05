@@ -95,6 +95,7 @@
       </section>
       <section class="products">
         <div class="container">
+          <a class="product-link">View All Trends</a>
           <h2 class="product-title">Trend Gallery</h2>
           <p class="product-text">
             The essential artifacts of modern urban expression. Curated for the
@@ -189,26 +190,116 @@ Movement</h2>
 <p class="sign-text">Sign up to receive early access to archive drops,
 community lookbooks, and sun-drenched style
 guides.</p>
-<div class="members-wrap">
-<img src="./images/Member.png" alt="" class="sign-img">
-<img src="./images/Member2.png" alt="" class="sign-img">
-<img src="./images/Member3.png" alt="" class="sign-img">
-<p class="sign-subtitle">+2,400 members</p>
-</div>
+<ul class="sign-list">
+<li class="sign-item"><img src="./images/Member.png" alt="" class="sign-img"></li>
+<li class="sign-item"><img src="./images/Member2.png" alt="" class="sign-img"></li>
+<li class="sign-item"><img src="./images/Member3.png" alt="" class="sign-img"></li>
+<li class="sign-item"><p class="sign-subtitle">+2,400 members</p></li>
+</ul>
 </div>
 <div class="form-wrapper">
 <form action="" class="form">
   <label for="email" class="label">FULL NAME</label>
-  <input type="text" class="input" placeholder="Alex Rivera" id="name">
+  <input type="text" class="input" placeholder="alex Rivera" id="name">
    <label for="" class="label">EMAIL ADDRESS</label>
   <input type="email" class="input" placeholder="alex@solarium.com" id="email">
 </form>
-<button class="form-btn" type="submit">AUTHENFICATE PROFIL</button>
+<button class="form-btn" type="submit">AUTHENFICATE PROFILE</button>
       <p class="form-text">BY JOINING, YOU AGREE TO OUR CURATOR TERMS AND LIFESTYLE GUIDELINES</p>
 </div>
 </div>
-
     </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+      <a href="./index.html" class="header-logo">SOLARIUM</a>
+      <ul class="footer-list">
+        <li class="footer-item"><a href="" class="footer-link">Instagram</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Twitter</a></li>
+        <li class="footer-item"><a href="" class="footer-link">TikTok</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Discord</a></li>
+      </ul>
+      <p class="footer-text">© 2024 SOLARIUM ARCHIVE. CURATED IN LIGHT.</p>
+      </div>
+    </footer>
+    <button class="open-modal">Secret Drops</button>
+
+<div class="overlay" id="overlay">
+
+    <div class="modal">
+
+        <button class="modal-close">&times;</button>
+
+        <div class="modal-image">
+
+            <img src="./images/modal.png" alt="">
+
+            <div class="badge">
+
+                LIMITED
+
+            </div>
+
+        </div>
+
+        <h2>SECRET DROPS</h2>
+
+        <p class="description">
+
+            You've unlocked a sun-drenched exclusive reward for the new season collection.
+
+        </p>
+
+        <div class="discount">
+
+            <h3>-15%</h3>
+
+            <p>OFF YOUR NEXT ORDER</p>
+
+        </div>
+
+        <div class="promo">
+
+            GOITEENS-STYLE
+
+        </div>
+
+        <button class="copy-btn">
+
+            Copy Code
+
+        </button>
+
+        <p class="valid">
+
+            VALID FOR THE NEXT 24 HOURS ONLY
+
+        </p>
+
+        <h4>STREETSPOTTER</h4>
+
+    </div>
+
+</div>
+<script>
+const openBtn = document.querySelector(".hero-btn");
+const overlay = document.querySelector(".overlay");
+const closeBtn = document.querySelector(".modal-close");
+
+openBtn.addEventListener("click", function () {
+    overlay.classList.add("active");
+});
+
+closeBtn.addEventListener("click", function () {
+    overlay.classList.remove("active");
+});
+
+overlay.addEventListener("click", function (e) {
+    if (e.target === overlay) {
+        overlay.classList.remove("active");
+    }
+});
+</script>
+</body>
   </body>
 </html>
